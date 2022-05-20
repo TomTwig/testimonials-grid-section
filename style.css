@@ -22,6 +22,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 .grid-col-span-2{
     grid-column: span 2;
@@ -34,12 +35,15 @@ body{
     grid-template-columns: repeat(4,1fr);
 
     padding-block: 2rem;
-    width: min(95%,70rem);
-    margin-inline: auto;
+    width: 70rem;
+    
 }
 .card{
     border-radius: 5px;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 .card__author{
     display: flex;
